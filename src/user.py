@@ -13,6 +13,7 @@ class User:
                 numbers += 1
             else:
                 schars += 1
+        
         if letters < 8:
             return False
         if numbers < 1:
