@@ -25,3 +25,4 @@ class User:
             return False
         if upper < 1:
             return False
+        return True
