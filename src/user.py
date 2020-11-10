@@ -15,3 +15,5 @@ class User:
                 schars += 1
         if letters < 8:
             return False
+        if numbers < 1:
+            return False
