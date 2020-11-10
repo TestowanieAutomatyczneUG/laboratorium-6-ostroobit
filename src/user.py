@@ -1,3 +1,4 @@
 class User:
     def valid_password(self, password):
-        pass
+        if len(password) == 1:
+            return False
