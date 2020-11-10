@@ -2,7 +2,7 @@ import unittest
 from src.user import User
 
 
-class TestUser(unittest.TestCase):
+class TeshtUser(unittest.TestCase):
     def setUp(self):
         self.temp = User()
     
@@ -14,3 +14,6 @@ class TestUser(unittest.TestCase):
     
     def test_more_than_8_characters_no_numbers(self):
         self.assertEqual(self.temp.valid_password("xyzuvwpqr@"), False)
+    
+    def test_more_than_8_characters_no_special(self):
+        self.assertEqual(self.temp.valid_password("ijewbijvbijewv1*"), False)
