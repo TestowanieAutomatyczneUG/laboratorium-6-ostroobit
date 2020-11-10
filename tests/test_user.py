@@ -22,4 +22,4 @@ class TeshtUser(unittest.TestCase):
         self.assertEqual(self.temp.valid_password("wwjieiwnecjnewjcn1#"), False)
 
     def test_correct(self):
-        self.assertEqual(self.temp.valid_password("ahbceiwbciewiG1*9jcejk:DD", True))
+        self.assertEqual(self.temp.valid_password("ahbceiwbciewiG1*9jcejk:DD"), True)
