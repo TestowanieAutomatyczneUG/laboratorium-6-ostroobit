@@ -8,3 +8,6 @@ class TestUser(unittest.TestCase):
     
     def test_single_character(self):
         self.assertEqual(self.temp.valid_password("a"), False)
+    
+    def test_less_than_8_letters(self):
+        self.assertEqual(self.temp.valid_password("abcdefg1"))
