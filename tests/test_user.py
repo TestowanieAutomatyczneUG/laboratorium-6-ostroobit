@@ -20,3 +20,6 @@ class TeshtUser(unittest.TestCase):
     
     def test_more_than_8_characters_no_upper(self):
         self.assertEqual(self.temp.valid_password("wwjieiwnecjnewjcn1#"), False)
+
+    def test_correct(self):
+        self.assertEqual(self.temp.valid_password("ahbceiwbciewiG1*9jcejk:DD", True))
